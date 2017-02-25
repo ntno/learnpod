@@ -1,0 +1,10 @@
+h1, div{
+	font-family: arial;
+}
+.myButtonClass{
+	background-color: yellow;
+	font-style: italic;
+}
+#addButton {
+	background-color: red;
+}
