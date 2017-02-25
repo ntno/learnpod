@@ -9,11 +9,21 @@
 		
 		<div>hello world</div>
 		<button onclick="printMessage()">Print Message</button>
-		
+		<button onclick="printCount()">Print Count</button>
+		<button onclick="incrementCount()">Add One</button>
+
 		<script>
 			var msg = "hi, friend!";
+			var count = 0;
+			
 			var printMessage = function(){
 				console.log(this.msg);
+			};
+			var printCount = function(){
+				console.log(this.count);
+			};
+			var incrementCount = function(){
+				this.count = this.count + 1;
 			};
 
 			console.log("woah console printing");
