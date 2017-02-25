@@ -14,17 +14,17 @@
 
 		<script>
  			'use strict';
-			var that = this;
-			var msg = "hi, friend!";
-			var count = 0;
+			var that = this, msg, count, printMessage, printCount, incrementCount;
 			
-			var printMessage = function(){
+			msg = "hi, friend!";
+			count = 0;
+			printMessage = function(){
 				console.log(that.msg);
 			};
-			var printCount = function(){
+			printCount = function(){
 				console.log(that.count);
 			};
-			var incrementCount = function(){
+			incrementCount = function(){
 				that.count = that.count + 1;
 			};
 
