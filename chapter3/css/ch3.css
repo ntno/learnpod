@@ -1,4 +1,4 @@
-h1, div{
+h1, h2, h3, div{
 	font-family: arial;
 }
 .myButtonClass{
@@ -7,4 +7,8 @@ h1, div{
 }
 #addButton {
 	background-color: red;
+}
+.exciting {
+	background-color: black;
+	color: magenta;
 }
