@@ -13,17 +13,19 @@
 		<button onclick="incrementCount()">Add One</button>
 
 		<script>
+ 			'use strict';
+			var that = this;
 			var msg = "hi, friend!";
 			var count = 0;
 			
 			var printMessage = function(){
-				console.log(this.msg);
+				console.log(that.msg);
 			};
 			var printCount = function(){
-				console.log(this.count);
+				console.log(that.count);
 			};
 			var incrementCount = function(){
-				this.count = this.count + 1;
+				that.count = that.count + 1;
 			};
 
 			console.log("woah console printing");
