@@ -15,7 +15,10 @@ var that = this
 	,countDisplaySpan
 	,sectionADiv
 	,myNewSpan1
-	,myNewSpan2;
+	,myNewSpan2
+	,myFavoriteFruits = ["mangos", "green apples", "green grapes", "black berries", "blue berries", "raspberries"]
+	,sectionBDiv
+	,myNewList;
 
 console.log("woah console printing");
 
@@ -33,3 +36,11 @@ myNewSpan2 = $('<span></span>');
 myNewSpan2.text("this is another test");
 myNewSpan2.attr('class', 'exciting');
 sectionADiv.append(myNewSpan2);
+
+sectionBDiv = $('#sectionB');
+myNewList = $('<ul></ul>');
+sectionBDiv.append(myNewList);
+for (var i in myFavoriteFruits){
+	console.log(i, myFavoriteFruits[i]);
+	myNewList.append($('<li></li>').text(myFavoriteFruits[i]));
+}
