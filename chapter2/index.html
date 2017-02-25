@@ -2,8 +2,11 @@
 <html lang="en-US">
 	<head>
 		<style>
-			h1, div {
+			h1, div{
 				font-family: arial;
+			}
+			.myButtonClass{
+				background-color: yellow;
 			}
 			#addButton {
 				background-color: red;
@@ -15,9 +18,9 @@
 		<h1>learnpod</h1>
 		
 		<div>hello world</div>
-		<button onclick="printMessage()">Print Message</button>
-		<button onclick="printCount()">Print Count</button>
-		<button id="addButton" onclick="incrementCount()">Add One</button>
+		<button class="myButtonClass" onclick="printMessage()">Print Message</button>
+		<button class="myButtonClass" onclick="printCount()">Print Count</button>
+		<button class="myButtonClass" id="addButton" onclick="incrementCount()">Add One</button>
 
  		<script type="text/javascript" src="./js/ch2.js"></script>	
 	</body
