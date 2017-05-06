@@ -11,12 +11,5 @@ angular.module('learnpod.controllers')
 		$scope.printCount = function(){
 			console.log($scope.count);
 		}
-	})
-	
-	.controller('ContactController', function($scope){
-		$scope.title = "contact us";
-		$scope.phone = "(123) 456-7890";
-		$scope.email = "ntno@github"
 	});
-
 })();
