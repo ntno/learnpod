@@ -27,6 +27,12 @@
 			<span ng-bind="contactScope.data.phone"></span>
 			<span>|</span>
 			<span ng-bind="contactScope.data.email"></span>
+			
+			<h4>update contact info</h4>
+			<span>email:</span>
+			<input ng-model="contactScope.userData.email"></input>
+			<br>
+			<button ng-click="contactScope.userFunctions.submit()">submit</button>
 		</div>
 	</body>
 </html>

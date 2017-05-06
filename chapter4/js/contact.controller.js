@@ -3,7 +3,10 @@
 //the controllers module contains the ContactController component
 angular.module('learnpod.controllers')
 	.controller('ContactController', ['$scope', function($scope){
-			var contactScope = null;
+			var contactScope = null
+			,submit = function(){
+				contactScope.data.email = contactScope.userData.email;
+			}
 			
 			//Establish Scope
 			$scope.contactScope = {
@@ -11,6 +14,12 @@ angular.module('learnpod.controllers')
 					title : "contact us"
 					,phone : "(123) 456-7890"
 					,email : "ntno@github"
+				}
+				,userData : {
+					email : ""
+				}
+				,userFunctions : {
+					submit : submit
 				}
 			};
 	
