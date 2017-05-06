@@ -6,17 +6,24 @@
 		<script type="text/javascript" src="./js/app.js"></script>	
 		<script type="text/javascript" src="./js/home.controller.js"></script>	
 	</head>
-	<body ng-controller="HomeController">
-		<h1 ng-bind="title"></h1>
-		<br>
+	<body>
+		<div ng-controller="HomeController">
+			<h1 ng-bind="title"></h1>
+			<br>
+			<div>
+				<span>current count:</span>
+				<span ng-bind="count"></span>
+			</div>
+			<br>
+			<div>
+				<button ng-click="incrementCount()">add to the count</button>
+				<button ng-click="printCount()">print the count</button>
+			</div>
 		<div>
-			<span>current count:</span>
-			<span ng-bind="count"></span>
-		</div>
-		<br>
-		<div>
-			<button ng-click="incrementCount()">add to the count</button>
-			<button ng-click="printCount()">print the count</button>
+		
+		<div ng-controller="ContactController">
+			<h3 ng-bind="title"></h3>
+			<span ng-bind="phone"></span>
 		</div>
 	</body>
 </html>
