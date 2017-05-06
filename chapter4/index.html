@@ -8,25 +8,25 @@
 		<script type="text/javascript" src="./js/contact.controller.js"></script>	
 	</head>
 	<body>
-		<div ng-controller="HomeController">
-			<h1 ng-bind="title"></h1>
+		<div data-ng-controller="HomeController">
+			<h1 ng-bind="homeScope.data.title"></h1>
 			<br>
 			<div>
 				<span>current count:</span>
-				<span ng-bind="count"></span>
+				<span ng-bind="homeScope.data.count"></span>
 			</div>
 			<br>
 			<div>
-				<button ng-click="incrementCount()">add to the count</button>
-				<button ng-click="printCount()">print the count</button>
+				<button ng-click="homeScope.userFunctions.incrementCount()">add to the count</button>
+				<button ng-click="homeScope.userFunctions.printCount()">print the count</button>
 			</div>
 		<div>
 		
 		<div ng-controller="ContactController">
-			<h3 ng-bind="title"></h3>
-			<span ng-bind="phone"></span>
+			<h3 ng-bind="contactScope.data.title"></h3>
+			<span ng-bind="contactScope.data.phone"></span>
 			<span>|</span>
-			<span ng-bind="email"></span>
+			<span ng-bind="contactScope.data.email"></span>
 		</div>
 	</body>
 </html>
