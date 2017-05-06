@@ -9,7 +9,7 @@
 	</head>
 	<body class="mint">
 		<div class="content">
-			<div class="blueberry" data-ng-controller="HomeController">
+			<div class="blueberry container" data-ng-controller="HomeController">
 				<h1 ng-bind="homeScope.data.title"></h1>
 				<br>
 				<div>
@@ -21,9 +21,9 @@
 					<button ng-click="homeScope.userFunctions.incrementCount()">add to the count</button>
 					<button ng-click="homeScope.userFunctions.printCount()">print the count</button>
 				</div>
-			<div>
-		
-			<div class="peach" ng-controller="ContactController">
+			</div>
+			<br>
+			<div class="peach container" ng-controller="ContactController">
 				<h3 ng-bind="contactScope.data.title"></h3>
 				<span ng-bind="contactScope.data.phone"></span>
 				<span>|</span>
