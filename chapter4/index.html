@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-US" ng-app="learnpodApp">
 	<head>
-		<link rel="stylesheet" type="text/css" href="./css/ch4.css">
+		<link rel="stylesheet" type="text/css" href="./css/learnpod.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
 		<script type="text/javascript" src="./js/app.js"></script>	
 		<script type="text/javascript" src="./js/home.controller.js"></script>	
 		<script type="text/javascript" src="./js/contact.controller.js"></script>	
 	</head>
 	<body>
-		<div data-ng-controller="HomeController">
-			<h1 ng-bind="homeScope.data.title"></h1>
-			<br>
+		<div class="content">
+			<div data-ng-controller="HomeController">
+				<h1 ng-bind="homeScope.data.title"></h1>
+				<br>
+				<div>
+					<span>current count:</span>
+					<span ng-bind="homeScope.data.count"></span>
+				</div>
+				<br>
+				<div>
+					<button ng-click="homeScope.userFunctions.incrementCount()">add to the count</button>
+					<button ng-click="homeScope.userFunctions.printCount()">print the count</button>
+				</div>
 			<div>
-				<span>current count:</span>
-				<span ng-bind="homeScope.data.count"></span>
-			</div>
-			<br>
-			<div>
-				<button ng-click="homeScope.userFunctions.incrementCount()">add to the count</button>
-				<button ng-click="homeScope.userFunctions.printCount()">print the count</button>
-			</div>
-		<div>
 		
-		<div ng-controller="ContactController">
-			<h3 ng-bind="contactScope.data.title"></h3>
-			<span ng-bind="contactScope.data.phone"></span>
-			<span>|</span>
-			<span ng-bind="contactScope.data.email"></span>
+			<div ng-controller="ContactController">
+				<h3 ng-bind="contactScope.data.title"></h3>
+				<span ng-bind="contactScope.data.phone"></span>
+				<span>|</span>
+				<span ng-bind="contactScope.data.email"></span>
 			
-			<h4>update contact info</h4>
-			<span>email:</span>
-			<input ng-model="contactScope.userData.email"></input>
-			<br>
-			<button ng-click="contactScope.userFunctions.submit()">submit</button>
+				<h4>update contact info</h4>
+				<span>email:</span>
+				<input ng-model="contactScope.userData.email"></input>
+				<br>
+				<button ng-click="contactScope.userFunctions.submit()">submit</button>
+			</div>
+
 		</div>
 	</body>
 </html>
