@@ -1,0 +1,18 @@
+input
+{
+  border-color:#ccc;
+  width:200px;
+  height:25px;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px;
+  padding-left:10px;
+  padding-bottom:2px;
+  font-size:13px;
+}
+
+input:focus
+{
+  outline:none;
+  box-shadow:0 0 3px 0 #a2d7ff;
+}
