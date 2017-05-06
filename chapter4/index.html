@@ -7,9 +7,9 @@
 		<script type="text/javascript" src="./js/home.controller.js"></script>	
 		<script type="text/javascript" src="./js/contact.controller.js"></script>	
 	</head>
-	<body>
+	<body class="mint">
 		<div class="content">
-			<div data-ng-controller="HomeController">
+			<div class="blueberry" data-ng-controller="HomeController">
 				<h1 ng-bind="homeScope.data.title"></h1>
 				<br>
 				<div>
@@ -23,7 +23,7 @@
 				</div>
 			<div>
 		
-			<div ng-controller="ContactController">
+			<div class="peach" ng-controller="ContactController">
 				<h3 ng-bind="contactScope.data.title"></h3>
 				<span ng-bind="contactScope.data.phone"></span>
 				<span>|</span>
