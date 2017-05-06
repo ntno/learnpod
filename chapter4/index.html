@@ -7,5 +7,15 @@
 	</head>
 	<body ng-controller="learnpodController">
 		<h1 ng-bind="title"></h1>
+		<br>
+		<div>
+			<span>current count:</span>
+			<span ng-bind="count"></span>
+		</div>
+		<br>
+		<div>
+			<button ng-click="incrementCount()">add to the count</button>
+			<button ng-click="printCount()">print the count</button>
+		</div>
 	</body>
 </html>
