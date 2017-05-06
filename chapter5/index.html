@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="learnpodApp">
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/learnpod.css">
+		<link rel="stylesheet" type="text/css" href="./css/button.css">
+		<link rel="stylesheet" type="text/css" href="./css/input.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" />
+      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous"/>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>	
+		<script type="text/javascript" src="./js/home.controller.js"></script>	
+		<script type="text/javascript" src="./js/contact.controller.js"></script>	
+	</head>
+	<body class="mint">
+		<div class="content">
+			<div class="blueberry container" data-ng-controller="HomeController">
+				<h1 ng-bind="homeScope.data.title"></h1>
+				<br>
+				<div>
+					<span>current count:</span>
+					<span ng-bind="homeScope.data.count"></span>
+				</div>
+				<br>
+				<div>
+					<button ng-click="homeScope.userFunctions.incrementCount()">add to the count</button>
+					<button ng-click="homeScope.userFunctions.printCount()">print the count</button>
+				</div>
+			</div>
+			<br>
+			<div class="peach container" ng-controller="ContactController">
+				<div>
+					<h2 ng-bind="contactScope.data.title"></h2>
+					<span ng-bind="contactScope.data.phone"></span>
+					<span>|</span>
+					<span ng-bind="contactScope.data.email"></span>
+				</div>
+				<br>
+				<div>
+					<h3>update contact info</h3>
+					<div>
+						<span>email:</span>
+						<input ng-model="contactScope.userData.email"></input>
+					</div>
+					<br>
+					<button ng-click="contactScope.userFunctions.submit()">submit</button>
+				</div>
+			</div>
+			<br>
+			<div>
+					<button>home</button>
+					<button>contact</button>
+			</div>
+		</div>
+	</body>
+</html>
