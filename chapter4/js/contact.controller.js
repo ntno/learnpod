@@ -6,6 +6,7 @@ angular.module('learnpod.controllers')
 			var contactScope = null
 			,submit = function(){
 				contactScope.data.email = contactScope.userData.email;
+				contactScope.userData.email = "";
 			}
 			
 			//Establish Scope
