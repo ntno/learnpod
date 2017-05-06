@@ -2,7 +2,7 @@
 'use strict'
 //the controllers module contains the ContactController component
 angular.module('learnpod.controllers')
-	.controller('ContactController', function($scope){
+	.controller('ContactController', ['$scope', function($scope){
 			var contactScope = null;
 			
 			//Establish Scope
@@ -16,5 +16,5 @@ angular.module('learnpod.controllers')
 	
 			//Initialize
 			contactScope = $scope.contactScope;
-		});
+		}]);
 })();
