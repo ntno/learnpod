@@ -5,6 +5,8 @@
 + chapter 3 - intro to jquery
 + chapter 4 - simple angular
 + chapter 5 - routing, single page application
+  * requires python install
+  * run using `python -m SimpleHTTPServer` then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
 
 ##Step by Step
