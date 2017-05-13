@@ -5,6 +5,7 @@
 + chapter 3 - intro to jquery
 + chapter 4 - simple angular
 + chapter 5 - routing, single page application
++ chapter 6 - jasmine unit testing
 
 ##Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
@@ -15,4 +16,4 @@
 + database
 + REST
 + css3 responsive design(?)
-+ bootstrap(?) 
++ bootstrap(?)
