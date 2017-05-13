@@ -8,7 +8,7 @@ angular.module('learnpod.controllers')
 				contactScope.data.email = contactScope.userData.email;
 				contactScope.userData.email = "";
 			}
-			
+
 			//Establish Scope
 			$scope.contactScope = {
 				data : {
@@ -23,7 +23,7 @@ angular.module('learnpod.controllers')
 					submit : submit
 				}
 			};
-	
+
 			//Initialize
 			contactScope = $scope.contactScope;
 		}]);
