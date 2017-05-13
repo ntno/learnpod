@@ -1,0 +1,53 @@
+body
+{
+  font-family:"Benton Sans",Helvetica,Sans-serif;
+  color:#222;
+  margin:0;
+}
+.content
+{
+  padding:1rem;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  max-width:1207px;
+}
+.container
+{
+	border-radius:1rem;
+	padding:1rem;
+}
+h1
+{
+  font-weight:bold;
+  font-size:22px;
+}
+h2
+{
+  font-size:18px;
+}
+h3
+{
+  font-size:14px;
+}
+
+
+
+.mint
+{
+  background-color:#83ffcd;
+}
+
+.peach
+{
+  background-color:#FBA058;
+}
+
+.blueberry
+{
+  background-color:#70a4d8;
+}
+.lilac
+{
+  background-color:#d3bded;
+}

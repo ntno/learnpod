@@ -1,0 +1,18 @@
+<div class="peach container" ng-controller="ContactController">
+	<div>
+		<h2 ng-bind="contactScope.data.title"></h2>
+		<span ng-bind="contactScope.data.phone"></span>
+		<span>|</span>
+		<span ng-bind="contactScope.data.email"></span>
+	</div>
+	<br>
+	<div>
+		<h3>update contact info</h3>
+		<div>
+			<span>email:</span>
+			<input ng-model="contactScope.userData.email"></input>
+		</div>
+		<br>
+		<button ng-click="contactScope.userFunctions.submit()">submit</button>
+	</div>
+</div>
