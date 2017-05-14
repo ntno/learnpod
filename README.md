@@ -8,9 +8,9 @@
   * requires python install
   * run using `python -m SimpleHTTPServer` then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
-+ chapter 7 - code coverage with karma
++ chapter 7 - packaging with npm (javascript package manager)
   * requires npm (install with Homebrew on mac)
-  * requires node.js
+  * requires node (install with npm)
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
@@ -22,3 +22,8 @@
 + REST
 + css3 responsive design(?)
 + bootstrap(?)
+
+/*NOTE:
+if you receive '[Errno 48] Address already in use' from `python -m SimpleHTTPServer`
+run `ps -fA | grep python` then kill any SimpleHTTPServer processes
+*/
