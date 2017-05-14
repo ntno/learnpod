@@ -4,11 +4,11 @@
 + chapter 2 - intro to css, separate javascript from html
 + chapter 3 - intro to jquery
 + chapter 4 - simple angular
-+ chapter 5 - routing, single page application **__requires python__**
++ chapter 5 - routing, single page application **_requires python_**
   *  *run:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
   * *jasmine:* open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
-+ chapter 7 - packaging with npm (javascript package manager) & karma &#x1F53A; **__requires npm__**
++ chapter 7 - packaging with npm (javascript package manager) & karma **_requires npm_**
   * *setup:* `npm install`
   * *run:* `npm start`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
