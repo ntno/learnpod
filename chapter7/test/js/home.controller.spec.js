@@ -38,6 +38,21 @@
         });
       });
 
+      describe('When printCount is called', function(){
+        it('it should exist', function(){
+          expect(mockScope.userFunctions.printCount)
+            .toEqual(jasmine.any(Function));
+        });
+
+        it('it should print the current count to the console', function(){
+          spyOn(console, 'log');
+          mockScope.data.count = 6;
+          var currentCount = mockScope.data.count;
+          mockScope.userFunctions.printCount();
+          expect(console.log).toHaveBeenCalledWith("homeScope.data.count", currentCount);
+        });
+      });
+
     });
   });
 })();
