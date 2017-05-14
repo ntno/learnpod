@@ -2,6 +2,10 @@
 // Generated on Sun May 14 2017 00:01:30 GMT-0400 (EDT)
 
 module.exports = function(config) {
+  var chapter = 'chapter7',
+  chapterSrc = chapter + '/src/js/*.js'
+  chapterTest = chapter + '/test/js/*.spec.js';
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -19,8 +23,8 @@ module.exports = function(config) {
       'node_modules/angular/angular.min.js',
       'node_modules/angular-route/angular-route.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      'chapter7/src/js/*.js',
-      'chapter7/test/js/*.spec.js'
+      chapterSrc,
+      chapterTest
     ],
 
 
@@ -32,13 +36,20 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      chapterSrc: 'coverage'
     },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'coverage'],
+
+    // optionally, configure the reporter
+    coverageReporter: {
+      type : 'html',
+      dir : chapter + '/test/coverage/'
+    },
 
 
     // web server port
