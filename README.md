@@ -13,7 +13,7 @@
   * requires npm (install using Homebrew on mac)
   * *setup:* `npm install`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *karma:*`node_modules/karma/bin/karma start` in 'learnpod'
+  * *karma:*`npm test` in 'learnpod'
   * *run app:* `python -m SimpleHTTPServer` in 'learnpod' then go to [local](http://127.0.0.1:8000/chapter7/src/#!/)
 
 ### Step by Step

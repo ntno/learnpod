@@ -2,10 +2,6 @@
 // Generated on Sun May 14 2017 00:01:30 GMT-0400 (EDT)
 
 module.exports = function(config) {
-  var chapter = 'chapter7',
-  chapterSrc = chapter + '/src/js/*.js'
-  chapterTest = chapter + '/test/js/*.spec.js';
-
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -23,8 +19,8 @@ module.exports = function(config) {
       'node_modules/angular/angular.min.js',
       'node_modules/angular-route/angular-route.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
-      chapterSrc,
-      chapterTest
+      'chapter7/src/js/*.js',
+      'chapter7/test/js/*.spec.js'
     ],
 
 
@@ -36,7 +32,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      chapterSrc: 'coverage'
+      'chapter7/src/js/*.js': 'coverage'
     },
 
 
@@ -48,7 +44,7 @@ module.exports = function(config) {
     // optionally, configure the reporter
     coverageReporter: {
       type : 'html',
-      dir : chapter + '/test/coverage/'
+      dir : 'chapter7/test/coverage/'
     },
 
 
