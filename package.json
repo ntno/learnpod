@@ -2,7 +2,11 @@
   "name": "learnpod",
   "version": "1.0.0",
   "description": "a step-by-step walkthrough of front end dev tools",
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-route": "^1.6.4"
+  },
   "devDependencies": {
     "jasmine-core": "^2.6.1",
     "karma": "^1.7.0",
