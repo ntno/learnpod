@@ -5,13 +5,12 @@
 + chapter 3 - intro to jquery
 + chapter 4 - simple angular
 + chapter 5 - routing, single page application
-  * requires python install
-  * run using `python -m SimpleHTTPServer` then go to [local](http://127.0.0.1:8000/)
+  * requires python
+  *  *run app:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
-  * jasmine: open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
+  * *jasmine:* open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
 + chapter 7 - packaging with npm (javascript package manager)
-  * requires npm (install with Homebrew on mac)
-  * requires node (install with npm)
+  * requires npm (install using Homebrew on mac)
   * *setup:* `npm install`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
   * *karma:*`node_modules/karma/bin/karma start` in 'learnpod'
@@ -29,5 +28,5 @@
 + bootstrap(?)
 
 ### NOTE:
-if you receive '[Errno 48] Address already in use' from `python -m SimpleHTTPServer`
+if you receive `'[Errno 48] Address already in use'` from `python -m SimpleHTTPServer`
 run `ps -fA | grep python` then kill any SimpleHTTPServer processes
