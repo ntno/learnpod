@@ -28,7 +28,6 @@
 + css3 responsive design(?)
 + bootstrap(?)
 
-/*NOTE:
+### NOTE:
 if you receive '[Errno 48] Address already in use' from `python -m SimpleHTTPServer`
 run `ps -fA | grep python` then kill any SimpleHTTPServer processes
-*/

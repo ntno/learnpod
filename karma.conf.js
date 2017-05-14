@@ -16,9 +16,9 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     //should use local file but for tutorial I will point to CDN
     files: [
-      'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js',
-      'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js',
-      'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-mocks.js',
+      'node_modules/angular/angular.min.js',
+      'node_modules/angular-route/angular-route.min.js',
+      'node_modules/angular-mocks/angular-mocks.js',
       'chapter7/src/js/*.js',
       'chapter7/test/js/*.spec.js'
     ],
