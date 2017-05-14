@@ -14,7 +14,6 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    //should use local file but for tutorial I will point to CDN
     files: [
       'node_modules/angular/angular.min.js',
       'node_modules/angular-route/angular-route.min.js',
