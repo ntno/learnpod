@@ -9,7 +9,7 @@
   *  *run app:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
   * *jasmine:* open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
-+ chapter 7 - packaging with npm (javascript package manager)
++ chapter 7 - packaging with npm (javascript package manager) & karma
   * requires npm (install using Homebrew on mac)
   * *setup:* `npm install`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
