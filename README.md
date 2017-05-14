@@ -8,9 +8,13 @@
   * requires python install
   * run using `python -m SimpleHTTPServer` then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
+  * jasmine: open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
 + chapter 7 - packaging with npm (javascript package manager)
   * requires npm (install with Homebrew on mac)
   * requires node (install with npm)
+  * jasmine: open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
+  * karma: run using `node_modules/karma/bin/karma start` in 'learnpod'
+  * run: `python -m SimpleHTTPServer` in 'learnpod/chapter7/src'
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")

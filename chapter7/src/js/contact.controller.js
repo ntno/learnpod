@@ -13,7 +13,7 @@ angular.module('learnpod.controllers')
 			$scope.contactScope = {
 				data : {
 					title : "contact us"
-					,phone : "(123) 456-7890"
+					,phone : "+1 123-456-7890"
 					,email : "ntno@github"
 				}
 				,userData : {
