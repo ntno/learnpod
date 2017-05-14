@@ -6,7 +6,7 @@
 + chapter 4 - simple angular
 + chapter 5 - routing, single page application
   * requires python
-  *  *run app:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
+  *  *run:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
   * *jasmine:* open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
 + chapter 7 - packaging with npm (javascript package manager) & karma
@@ -14,7 +14,7 @@
   * *setup:* `npm install`
   * *run:* `npm start`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *karma:*`npm test` in 'learnpod' then open 'learnpod/chapter7/test/coverage/Chrome 58.0.3029 (Mac OS X 10.12.4)/index.html' in the browser
+  * *karma:*`npm test` then open 'learnpod/chapter7/test/coverage/Chrome 58.0.3029 (Mac OS X 10.12.4)/index.html' in the browser
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
