@@ -14,7 +14,6 @@
   * *setup:* `npm install`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
   * *karma:*`npm test` in 'learnpod' then open 'learnpod/chapter7/test/coverage/Chrome 58.0.3029 (Mac OS X 10.12.4)/index.html' in the browser
-
   * *run app:* `python -m SimpleHTTPServer` in 'learnpod' then go to [local](http://127.0.0.1:8000/chapter7/src/#!/)
 
 ### Step by Step
