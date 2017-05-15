@@ -15,6 +15,7 @@
   * *run:* `npm start`
   * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
   * *karma:*`npm test` then open 'learnpod/chapter7/test/coverage/Chrome 58.0.3029 (Mac OS X 10.12.4)/index.html' in the browser
++ chapter 8 - REST
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
