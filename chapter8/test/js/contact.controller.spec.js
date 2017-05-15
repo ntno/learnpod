@@ -6,7 +6,7 @@
       ,mockContactController
       ,mockScope;
 
-      beforeEach(module('learnpodApp'));
+      beforeEach(module('learnpod.controllers'));
 
       beforeEach(inject(function ($rootScope, $controller) {
         mockContactControllerScope = $rootScope.$new();
