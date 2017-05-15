@@ -1,5 +1,6 @@
 (function(){
 'use strict'
+angular.module('learnpod.services', []);
 angular.module('learnpod.controllers', []);
 angular.module('learnpodApp', ['ngRoute', 'learnpod.controllers']);
 angular.module('learnpodApp')
