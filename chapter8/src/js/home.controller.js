@@ -20,6 +20,7 @@ angular.module('home.controller', ['dataAccess.service'])
 				title : "learnpod home"
 				,count : 0
 				,url : ""
+				,imgUrl : ""
 			}
 			,userFunctions : {
 				incrementCount : incrementCount
@@ -36,6 +37,7 @@ angular.module('home.controller', ['dataAccess.service'])
 				var giphyData = successfulResponse.data;
 
 				homeScope.data.url = giphyData[0].url;
+				homeScope.data.imgUrl = giphyData[0].images.fixed_height.url;
 			},
 			function(failedResponse){
 				console.log(failedResponse);
