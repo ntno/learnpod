@@ -1,19 +1,19 @@
 (function(){
 'use strict'
 //the controllers module contains the HomeController component and ContactController
-angular.module('learnpod.controllers')
+angular.module('home.controller', [])
 	.controller('HomeController', ['$scope', function($scope){
 		var homeScope = null
 		,incrementCount
 		,printCount;
-		
+
 		incrementCount = function(){
-			homeScope.data.count += 1; 
+			homeScope.data.count += 1;
 		};
 		printCount = function(){
 			console.log("homeScope.data.count", homeScope.data.count);
 		};
-		
+
 		//Establish Scope
 		$scope.homeScope = {
 			data : {
@@ -24,9 +24,9 @@ angular.module('learnpod.controllers')
 				incrementCount : incrementCount
 				,printCount : printCount
 			}
-		};	
+		};
 
-		//Initialize		
+		//Initialize
 		homeScope = $scope.homeScope;
 
 	}]);

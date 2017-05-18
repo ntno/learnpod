@@ -1,7 +1,7 @@
 (function(){
 'use strict'
 //the controllers module contains the ContactController component
-angular.module('learnpod.controllers')
+angular.module('contact.controller', [])
 	.controller('ContactController', ['$scope', function($scope){
 			var contactScope = null
 			,submit = function(){

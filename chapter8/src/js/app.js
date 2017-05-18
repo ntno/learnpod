@@ -1,9 +1,6 @@
 (function(){
 'use strict'
-angular.module('learnpod.services', []);
-angular.module('learnpod.controllers', []);
-angular.module('learnpodApp', ['ngRoute', 'learnpod.controllers']);
-angular.module('learnpodApp')
+angular.module('learnpodApp', ['ngRoute', 'home.controller', 'contact.controller'])
 	.config(function($routeProvider){
 		$routeProvider
 			.when('/', {
@@ -16,5 +13,4 @@ angular.module('learnpodApp')
 				redirectTo : '/'
 			});
 	});
-
 })();

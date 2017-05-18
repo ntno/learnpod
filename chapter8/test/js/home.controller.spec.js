@@ -6,7 +6,7 @@
       ,mockHomeController
       ,mockScope;
 
-      beforeEach(module('learnpod.controllers'));
+      beforeEach(module('home.controller'));
 
       beforeEach(inject(function ($rootScope, $controller) {
         mockHomeControllerScope = $rootScope.$new();

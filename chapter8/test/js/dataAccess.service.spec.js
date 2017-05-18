@@ -4,7 +4,7 @@
     describe('When DataAccessService is instantiated', function () {
       var mockDataAccessService;
 
-      beforeEach(module('learnpod.services'));
+      beforeEach(module('dataAccess.service'));
 
       beforeEach(inject(function ($injector) {
         mockDataAccessService = $injector.get('DataAccessService');

@@ -1,7 +1,7 @@
 (function(){
 'use strict'
 //the services module contains the DataAccessService component
-angular.module('learnpod.services')
+angular.module('dataAccess.service', [])
 	.service('DataAccessService', function(){
 		var getGiphySearchResource = function(){
 
