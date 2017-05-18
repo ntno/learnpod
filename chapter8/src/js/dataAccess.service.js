@@ -2,9 +2,9 @@
 'use strict'
 //the services module contains the DataAccessService component
 angular.module('dataAccess.service', ['ngResource'])
-	.service('DataAccessService', ['$resource', function(){
-		var getGiphySearchResource = function($resource){
-
+	.factory('DataAccessService', ['$resource', function($resource){
+		var getGiphySearchResource = function(){
+			return $resource('http://api.giphy.com/v1/gifs/search?q=cute&api_key=dc6zaTOxFJmzC');
 		};
 		return {
 			getGiphySearchResource : getGiphySearchResource

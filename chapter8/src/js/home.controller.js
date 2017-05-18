@@ -1,8 +1,8 @@
 (function(){
 'use strict'
 //the controllers module contains the HomeController component and ContactController
-angular.module('home.controller', [])
-	.controller('HomeController', ['$scope', function($scope){
+angular.module('home.controller', ['dataAccess.service'])
+	.controller('HomeController', ['$scope', 'DataAccessService', function($scope, DataAccessService){
 		var homeScope = null
 		,incrementCount
 		,printCount;
@@ -28,6 +28,5 @@ angular.module('home.controller', [])
 
 		//Initialize
 		homeScope = $scope.homeScope;
-
 	}]);
 })();
