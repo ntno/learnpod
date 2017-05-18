@@ -28,5 +28,13 @@ angular.module('home.controller', ['dataAccess.service'])
 
 		//Initialize
 		homeScope = $scope.homeScope;
+		DataAccessService.getGiphySearchResource().get(
+			function(successfulResponse){
+				console.log(successfulResponse);
+			},
+			function(failedResponse){
+				console.log(failedResponse);
+			}
+		);
 	}]);
 })();
