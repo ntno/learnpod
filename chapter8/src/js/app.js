@@ -1,7 +1,7 @@
 (function(){
 'use strict'
-angular.module('learnpodApp', ['ngRoute', 'home.controller', 'contact.controller'])
-	.config(function($routeProvider){
+angular.module('learnpodApp', ['ngResource', 'ngRoute', 'home.controller', 'contact.controller'])
+	.config(['$routeProvider', function($routeProvider){
 		$routeProvider
 			.when('/', {
 				templateUrl : 'partials/home.tpl.html'
@@ -12,5 +12,5 @@ angular.module('learnpodApp', ['ngRoute', 'home.controller', 'contact.controller
 			.otherwise({
 				redirectTo : '/'
 			});
-	});
+	}]);
 })();

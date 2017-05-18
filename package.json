@@ -4,10 +4,11 @@
   "description": "a step-by-step walkthrough of front end dev tools",
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-mocks": "^1.6.4",
+    "angular-resource": "^1.6.4",
     "angular-route": "^1.6.4"
   },
   "devDependencies": {
+    "angular-mocks": "^1.6.4",
     "jasmine-core": "^2.6.1",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.1.1",
@@ -16,7 +17,7 @@
     "karma-phantomjs-launcher": "^1.0.4"
   },
   "scripts": {
-    "start":"python -m SimpleHTTPServer",
+    "start": "python -m SimpleHTTPServer",
     "test": "./node_modules/karma/bin/karma start"
   },
   "repository": {
