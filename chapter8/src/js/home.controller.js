@@ -19,6 +19,7 @@ angular.module('home.controller', ['dataAccess.service'])
 			data : {
 				title : "learnpod home"
 				,count : 0
+				,url : ""
 			}
 			,userFunctions : {
 				incrementCount : incrementCount
@@ -28,9 +29,13 @@ angular.module('home.controller', ['dataAccess.service'])
 
 		//Initialize
 		homeScope = $scope.homeScope;
+
 		DataAccessService.getGiphySearchResource().get(
 			function(successfulResponse){
 				console.log(successfulResponse);
+				var giphyData = successfulResponse.data;
+
+				homeScope.data.url = giphyData[0].url;
 			},
 			function(failedResponse){
 				console.log(failedResponse);
