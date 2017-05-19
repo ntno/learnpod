@@ -3,28 +3,17 @@
 //the controllers module contains the HomeController component and ContactController
 angular.module('home.controller', ['dataResource.factory'])
 	.controller('HomeController', ['$scope', 'DataResourceFactory', function($scope, DataResourceFactory){
-		var homeScope = null
-		,incrementCount
-		,printCount;
+		var homeScope = null;
 
-		incrementCount = function(){
-			homeScope.data.count += 1;
-		};
-		printCount = function(){
-			console.log("homeScope.data.count", homeScope.data.count);
-		};
 
 		//Establish Scope
 		$scope.homeScope = {
 			data : {
 				title : "learnpod home"
-				,count : 0
 				,url : ""
 				,imgUrl : ""
 			}
 			,userFunctions : {
-				incrementCount : incrementCount
-				,printCount : printCount
 			}
 		};
 
