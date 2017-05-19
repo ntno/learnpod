@@ -1,8 +1,8 @@
 (function(){
 'use strict'
 //the controllers module contains the HomeController component and ContactController
-angular.module('home.controller', ['dataResource.factory'])
-	.controller('HomeController', ['$scope', 'DataResourceFactory', function($scope, DataResourceFactory){
+angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
+	.controller('HomeController', ['$scope', 'DataResourceFactory', 'GifInfoFactory', function($scope, DataResourceFactory, GifInfoFactory){
 		var homeScope = null;
 
 
@@ -10,11 +10,14 @@ angular.module('home.controller', ['dataResource.factory'])
 		$scope.homeScope = {
 			data : {
 				title : "learnpod home"
-				,url : ""
-				,imgUrl : ""
+				,gif : {
+					url : ""
+					,imgUrl : ""
+				}
 			}
 			,userFunctions : {
 			}
+			,hasError : null
 		};
 
 		//Initialize
@@ -22,14 +25,13 @@ angular.module('home.controller', ['dataResource.factory'])
 
 		DataResourceFactory.getGiphySearchResource().get(
 			function(successfulResponse){
-				console.log(successfulResponse);
 				var giphyData = successfulResponse.data;
-
-				homeScope.data.url = giphyData[0].url;
-				homeScope.data.imgUrl = giphyData[0].images.fixed_height.url;
+				homeScope.data.gif.url = giphyData[0].url; 
+				homeScope.data.gif.imgUrl = giphyData[0].images.fixed_height.url;
+				homeScope.hasError = false;
 			},
 			function(failedResponse){
-				console.log(failedResponse);
+				homeScope.hasError = true;
 			}
 		);
 	}]);
