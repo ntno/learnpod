@@ -1,8 +1,8 @@
 (function(){
 'use strict'
 //the controllers module contains the HomeController component and ContactController
-angular.module('home.controller', ['dataAccess.service'])
-	.controller('HomeController', ['$scope', 'DataAccessService', function($scope, DataAccessService){
+angular.module('home.controller', ['dataResource.factory'])
+	.controller('HomeController', ['$scope', 'DataResourceFactory', function($scope, DataResourceFactory){
 		var homeScope = null
 		,incrementCount
 		,printCount;
@@ -31,7 +31,7 @@ angular.module('home.controller', ['dataAccess.service'])
 		//Initialize
 		homeScope = $scope.homeScope;
 
-		DataAccessService.getGiphySearchResource().get(
+		DataResourceFactory.getGiphySearchResource().get(
 			function(successfulResponse){
 				console.log(successfulResponse);
 				var giphyData = successfulResponse.data;
