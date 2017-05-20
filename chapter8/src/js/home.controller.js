@@ -9,9 +9,7 @@ angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 			DataResourceFactory.getGiphySearchResource().get(
 				function(successfulResponse){
 					giphyData = successfulResponse.data;
-					console.log(giphyData);
-					homeScope.data.gif.url = giphyData[0].url;
-					homeScope.data.gif.imgUrl = giphyData[0].images.fixed_height.url;
+					homeScope.data.gif = GifInfoFactory.createGifInfo(giphyData[0]);
 					homeScope.hasError = false;
 				},
 				function(failedResponse){
@@ -23,8 +21,7 @@ angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 		,nextGif = function(){
 			currentGifIdx++;
 			var idx = currentGifIdx%25;
-			homeScope.data.gif.url = giphyData[idx].url;
-			homeScope.data.gif.imgUrl = giphyData[idx].images.fixed_height.url;
+			homeScope.data.gif = GifInfoFactory.createGifInfo(giphyData[idx]);
 		};
 
 
@@ -33,8 +30,12 @@ angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 			data : {
 				title : "learnpod home"
 				,gif : {
-					url : ""
-					,imgUrl : ""
+					sourceUrl : ""
+					,fixed_height : {
+						url : ""
+						,height : ""
+						,width : ""
+					}
 				}
 			}
 			,userFunctions : {

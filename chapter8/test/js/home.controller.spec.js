@@ -1,6 +1,6 @@
 (function(){
   describe('HomeController Test Suite', function(){
-    
+
     describe('When home.controller module is created', function () {
       var
       moduleName = 'home.controller'
@@ -88,10 +88,10 @@
                 expect(mockScope.hasError).toBe(false);
               });
               it('it should set url on scope', function(){
-                expect(mockScope.data.gif.url).toBe("http://giphy.com/gifs/puppy-down-slides-gZLl9szOpgbpS");
+                expect(mockScope.data.gif.sourceUrl).toBe("http://giphy.com/gifs/puppy-down-slides-gZLl9szOpgbpS");
               });
-              it('it should set imgurl on scope', function(){
-                expect(mockScope.data.gif.imgUrl).toBe("http://media4.giphy.com/media/gZLl9szOpgbpS/200.gif");
+              it('it should set the fixed_height url on scope', function(){
+                expect(mockScope.data.gif.fixed_height.url).toBe("http://media4.giphy.com/media/gZLl9szOpgbpS/200.gif");
               });
             });
 
@@ -105,10 +105,10 @@
                 expect(mockScope.hasError).toBe(true);
               });
               it('it should have url set to "" on scope', function(){
-                expect(mockScope.data.gif.url).toEqual("");
+                expect(mockScope.data.gif.sourceUrl).toEqual("");
               });
               it('it should have imgurl set to "" on scope', function(){
-                expect(mockScope.data.gif.imgUrl).toEqual("");
+                expect(mockScope.data.gif.fixed_height.url).toEqual("");
               });
             });
           });
