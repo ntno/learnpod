@@ -47,10 +47,22 @@
                               }
                             }
                           }
+              ,thirdGif = {
+                type : "gif"
+                ,url : "fakeSourceURL"
+                ,images : {
+                  fixed_height : {
+                    url : "http://media0.giphy.com/media/4T7e4DmcrP9du/200.gif"
+                    ,width : 191
+                    ,height : 200
+                  }
+                }
+              }
               ,mockGiphyResponse = {
                 data : [
                   firstGif
                   ,secondGif
+                  ,thirdGif
                 ]
               };
 
@@ -88,14 +100,14 @@
                 expect(mockScope.hasError).toBe(false);
               });
               it('it should set url on scope', function(){
-                expect(mockScope.data.gif.sourceUrl).toBe("http://giphy.com/gifs/puppy-down-slides-gZLl9szOpgbpS");
+                expect(mockScope.data.gif.sourceUrl).toBe(firstGif.url);
               });
               it('it should set the fixed_height url on scope', function(){
-                expect(mockScope.data.gif.fixed_height.url).toBe("http://media4.giphy.com/media/gZLl9szOpgbpS/200.gif");
+                expect(mockScope.data.gif.fixed_height.url).toBe(firstGif.images.fixed_height.url);
               });
             });
 
-            describe('When the response is valid', function(){
+            describe('When the response is invalid', function(){
               beforeEach(function(){
                 $httpBackend.expectGET(mockGiphyResource).respond(400);
                 $httpBackend.flush();
@@ -112,6 +124,42 @@
               });
             });
           });
+
+          describe('When nextGif is called', function(){
+            beforeEach(function(){
+              $httpBackend.expectGET(mockGiphyResource).respond(mockGiphyResponse);
+              $httpBackend.flush();
+            });
+
+            describe('for the first time', function(){
+              it('it sets url/imgurl to the second gif in the data response', function(){
+                mockScope.userFunctions.nextGif();
+                expect(mockScope.data.gif.sourceUrl).toBe(secondGif.url);
+                expect(mockScope.data.gif.fixed_height.url).toBe(secondGif.images.fixed_height.url);
+              });
+            });
+
+            describe('for the second time', function(){
+              it('it sets url/imgurl to the third gif in the data response', function(){
+                mockScope.userFunctions.nextGif();
+                mockScope.userFunctions.nextGif();
+                expect(mockScope.data.gif.sourceUrl).toBe(thirdGif.url);
+                expect(mockScope.data.gif.fixed_height.url).toBe(thirdGif.images.fixed_height.url);
+              });
+            });
+
+            describe('for the nth time (where n is the number of gifs in the data response)', function(){
+              it('it sets url/imgurl to the first gif in the data response', function(){
+                mockScope.userFunctions.nextGif();
+                mockScope.userFunctions.nextGif();
+                mockScope.userFunctions.nextGif();
+                expect(mockScope.data.gif.sourceUrl).toBe(firstGif.url);
+                expect(mockScope.data.gif.fixed_height.url).toBe(firstGif.images.fixed_height.url);
+              });
+            });
+          });
+
+
         });
       });
     });

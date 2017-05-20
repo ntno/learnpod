@@ -20,7 +20,7 @@ angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 		,currentGifIdx = 0
 		,nextGif = function(){
 			currentGifIdx++;
-			var idx = currentGifIdx%25;
+			var idx = currentGifIdx%(giphyData.length);
 			homeScope.data.gif = GifInfoFactory.createGifInfo(giphyData[idx]);
 		};
 
