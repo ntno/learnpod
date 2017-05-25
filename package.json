@@ -28,9 +28,7 @@
     "tutorial",
     "angular",
     "jasmine",
-    "karma",
-    "require",
-    "requirejs"
+    "karma"
   ],
   "author": "ntno",
   "license": "ISC",
