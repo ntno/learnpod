@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="learnpodApp">
+	<head>
+		<script src="../../../node_modules/angular/angular.min.js"></script>
+		<script src="../../../node_modules/angular-resource/angular-resource.min.js"></script>
+		<script src="../../../node_modules/angular-route/angular-route.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/learnpod.css">
+		<link rel="stylesheet" type="text/css" href="css/button.css">
+		<link rel="stylesheet" type="text/css" href="css/input.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/home.controller.js"></script>
+		<script type="text/javascript" src="js/contact.controller.js"></script>
+		<script type="text/javascript" src="js/dataResource.factory.js"></script>
+		<script type="text/javascript" src="js/gifInfo.factory.js"></script>
+
+	</head>
+	<body class="mint content">
+<!--
+			For local development run the command 'python -m SimpleHTTPServer' from learnpod
+			Then navigate to 'http://127.0.0.1:8000/chapter7/src/#!/' in the browser
+ -->
+ 		<header class="lilac container">
+			<nav>
+				<ul>
+					<li><a ng-href="#">Home</a></li>
+					<li><a ng-href="#!contact">Contact</a></li>
+				</ul>
+			</nav>
+ 		</header>
+ 		<br>
+		<div>
+			<div ng-view></div>
+		</div>
+	</body>
+</html>
