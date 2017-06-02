@@ -14,6 +14,7 @@ angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 				},
 				function(failedResponse){
 					homeScope.hasError = true;
+					console.log("giphy request failed ", failedResponse);
 				}
 			);
 		}

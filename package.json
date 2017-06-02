@@ -23,6 +23,17 @@
     "lint": "jshint chapter9/src/js/*.js",
     "pretest" : "npm run lint"
   },
+  "jshintConfig" :{
+    "curly" : true,
+    "laxcomma" : true,
+    "nonbsp" : true,
+    "notypeof" : true,
+    "strict" : "global",
+    "undef" : true,
+    "unused" : true,
+    "devel" : true,
+    "predef" : ["angular"]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ntno/learnpod.git"
