@@ -1,5 +1,5 @@
 (function(){
-'use strict'
+'use strict';
 //the controllers module contains the HomeController component and ContactController
 angular.module('home.controller', ['dataResource.factory', 'gifInfo.factory'])
 	.controller('HomeController', ['$scope', 'DataResourceFactory', 'GifInfoFactory', function($scope, DataResourceFactory, GifInfoFactory){

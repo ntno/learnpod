@@ -1,5 +1,5 @@
 (function(){
-'use strict'
+'use strict';
 //the controllers module contains the ContactController component
 angular.module('contact.controller', [])
 	.controller('ContactController', ['$scope', function($scope){
@@ -7,7 +7,7 @@ angular.module('contact.controller', [])
 			,submit = function(){
 				contactScope.data.email = contactScope.userData.email;
 				contactScope.userData.email = "";
-			}
+			};
 
 			//Establish Scope
 			$scope.contactScope = {

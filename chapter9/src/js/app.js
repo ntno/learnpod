@@ -1,5 +1,5 @@
 (function(){
-'use strict'
+'use strict';
 angular.module('learnpodApp', ['ngResource', 'ngRoute', 'home.controller', 'contact.controller'])
 	.config(['$routeProvider', function($routeProvider){
 		$routeProvider

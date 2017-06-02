@@ -1,5 +1,5 @@
 (function(){
-'use strict'
+'use strict';
 angular.module('dataResource.factory', ['ngResource'])
 	.factory('DataResourceFactory', ['$resource', function($resource){
 		var getGiphySearchResource = function(){

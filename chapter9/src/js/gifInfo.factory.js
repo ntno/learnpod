@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
   angular.module('gifInfo.factory', [])
     .factory('GifInfoFactory', [function() {
       var createGifInfo = function(data) {
