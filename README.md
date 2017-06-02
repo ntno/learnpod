@@ -23,12 +23,16 @@
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
 
 ### TODO
-+ music
-+ animation
++ linter
++ 7 scripts
++ fancify readme
 + data import (csv)
 + database
++ node
 + css3 responsive design(?)
 + bootstrap(?)
++ music
++ animation
 
 ### NOTE:
 if you receive `'[Errno 48] Address already in use'` from `python -m SimpleHTTPServer`
