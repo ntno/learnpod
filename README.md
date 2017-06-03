@@ -14,7 +14,7 @@
   * *setup:* `npm install`
   * *run:* `npm start`
   * *spec reults:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/report-html/js/index.html' in the browser
+  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/report-html/js/index.html' in browser
 + chapter 8 - REST (giphy)
 + chapter 9 - jshint & npm script cleanup
   * *code quality check* `npm run lint`
@@ -27,6 +27,9 @@
 
 ### TODO
 + pass arguments to karma conf / npm scripts
+  * pass chapter# to linter/test runner
+  * pass specific spec to test runner
+  * pass specific file to linter 
 + 7 scripts
 + fancify readme
 + data import (csv)
