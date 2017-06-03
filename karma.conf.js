@@ -31,6 +31,10 @@ module.exports = function(config) {
       testCode
     ],
 
+    // print to the terminal during karma run
+    client: {
+      captureConsole: false
+    },
 
     // list of files to exclude
     exclude: [
@@ -45,9 +49,20 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress', 'coverage'],
+    reporters: ['spec', 'coverage'],    //'progress'
 
-    // optionally, configure the reporter
+    // optionally, configure the spec reporter
+    specReporter: {
+            maxLogLines: 5,             // limit number of lines logged per test
+            suppressErrorSummary: false, // do not print error summary
+            suppressFailed: false,      // do not print information about failed tests
+            suppressPassed: false,      // do not print information about passed tests
+            suppressSkipped: false,      // do not print information about skipped tests
+            showSpecTiming: false,      // print the time elapsed for each spec
+            failFast: false              // test would finish with error when a first fail occurs.
+    },
+
+    // optionally, configure the coverage reporter
     coverageReporter: {
       type : 'html',
       dir : testCoverage
@@ -68,17 +83,17 @@ module.exports = function(config) {
 
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'PhantomJS'],
+    browsers: ['PhantomJS'],  //'Chrome'
 
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous
