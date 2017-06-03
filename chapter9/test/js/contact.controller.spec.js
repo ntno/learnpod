@@ -22,7 +22,7 @@
         expect(dependencies).toEqual(expectedDependencies);
       });
 
-      describe('When ContactController is instantiated', function () {
+      xdescribe('When ContactController is instantiated', function () {
 
         beforeEach(inject(function ($injector) {
           $rootScope = $injector.get('$rootScope');

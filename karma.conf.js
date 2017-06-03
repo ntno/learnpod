@@ -64,8 +64,15 @@ module.exports = function(config) {
 
     // optionally, configure the coverage reporter
     coverageReporter: {
-      type : 'html',
-      dir : testCoverage
+      // specify a common output directory
+      dir: testCoverage,
+        reporters: [
+          // reporters not supporting the `file` property
+          { type: 'html', subdir: 'report-html' },
+          // reporters supporting the `file` property, use `subdir` to directly
+          // output them in the `dir` directory
+          { type: 'text'},//, subdir: '.', file: 'text.txt' },
+        ]
     },
 
 
