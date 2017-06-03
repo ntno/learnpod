@@ -14,7 +14,7 @@
   * *setup:* `npm install`
   * *run:* `npm start`
   * *spec reults:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/PhantomJS 2.1.1 (Mac OS X 0.0.0)/index.html' in the browser
+  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/report-html/js/index.html' in the browser
 + chapter 8 - REST (giphy)
 + chapter 9 - jshint & npm script cleanup
   * *code quality check* `npm run lint`
