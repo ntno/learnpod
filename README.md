@@ -13,17 +13,20 @@
   * **_requires npm_**
   * *setup:* `npm install`
   * *run:* `npm start`
-  * *jasmine:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *karma:*`npm test` then open 'learnpod/chapter7/test/coverage/Chrome 58.0.3029 (Mac OS X 10.12.4)/index.html' in the browser
+  * *spec reults:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
+  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/PhantomJS 2.1.1 (Mac OS X 0.0.0)/index.html' in the browser
 + chapter 8 - REST (giphy)
-+ chapter 9
++ chapter 9 - jshint & npm script cleanup
+  * *code quality check* `npm run lint`
+  * *run jasmine specs from command line* `npm run karma`
+  * *run linter then specs* `npm test`
 
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
 
 ### TODO
-+ linter
++ pass arguments to karma conf / npm scripts
 + 7 scripts
 + fancify readme
 + data import (csv)
