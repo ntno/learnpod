@@ -16,16 +16,6 @@
 		<script type="text/javascript" src="js/contact.controller.js"></script>
 		<script type="text/javascript" src="js/dataResource.factory.js"></script>
 		<script type="text/javascript" src="js/gifInfo.factory.js"></script>
-
-		<script type="text/processing" data-processing-target="learnpodCanvas">
-			void setup(){
-				size(500, 500);
-				background(0);
-				fill(255);
-				ellipse(width/2, height/2, 50, 50);
-				noLoop();
-			}
-		</script>
 	</head>
 	<body class="mint content">
 <!--
@@ -44,6 +34,6 @@
 		<div>
 			<div ng-view></div>
 		</div>
-		<canvas id="learnpodCanvas"></canvas>
+		<canvas data-processing-sources="sketches/interactiveBall.pde" id="learnpodCanvas"></canvas>
 	</body>
 </html>
