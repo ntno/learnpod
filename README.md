@@ -26,6 +26,7 @@
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
 
 ### TODO
++ print to chrome console via processing script
 + pass arguments to karma conf / npm scripts
   * pass chapter# to linter/test runner
   * pass specific spec to test runner
