@@ -1,0 +1,14 @@
+<div class="blueberry container" data-ng-controller="HomeController">
+	<h1 ng-bind="homeScope.data.title"></h1>
+	<br>
+	<div>
+		<img ng-src={{homeScope.data.gif.fixed_height.url}}></img>
+		<br>
+		<a ng-href={{homeScope.data.gif.sourceUrl}}>gif source</a>
+	</div>
+	<br>
+	<br>
+	<div>
+		<button ng-click="homeScope.userFunctions.nextGif()">another!</button>
+	</div>
+</div>
