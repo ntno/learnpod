@@ -4,6 +4,7 @@
 		<script src="../../../node_modules/angular/angular.min.js"></script>
 		<script src="../../../node_modules/angular-resource/angular-resource.min.js"></script>
 		<script src="../../../node_modules/angular-route/angular-route.min.js"></script>
+		<script src="../../../node_modules/processing-js/processing.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="css/learnpod.css">
 		<link rel="stylesheet" type="text/css" href="css/button.css">
@@ -16,11 +17,20 @@
 		<script type="text/javascript" src="js/dataResource.factory.js"></script>
 		<script type="text/javascript" src="js/gifInfo.factory.js"></script>
 
+		<script type="text/processing" data-processing-target="learnpodCanvas">
+			void setup(){
+				size(500, 500);
+				background(0);
+				fill(255);
+				ellipse(width/2, height/2, 50, 50);
+				noLoop();
+			}
+		</script>
 	</head>
 	<body class="mint content">
 <!--
 			For local development run 'npm start' from the learnpod directory.
-			Then navigate to 'http://127.0.0.1:8000/chapter09/src/#!/' in the browser
+			Then navigate to 'http://127.0.0.1:8000/chapter10/src/#!/' in the browser
  -->
  		<header class="lilac container">
 			<nav>
@@ -34,5 +44,6 @@
 		<div>
 			<div ng-view></div>
 		</div>
+		<canvas id="learnpodCanvas"></canvas>
 	</body>
 </html>
