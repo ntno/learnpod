@@ -6,15 +6,15 @@
 + chapter 4 - simple angular
 + chapter 5 - routing, single page application
   * **_requires python_**
-  *  *run:* `python -m SimpleHTTPServer` in 'chapter5' then go to [local](http://127.0.0.1:8000/)
+  *  *run:* `python -m SimpleHTTPServer` in 'chapter05' then go to [local](http://127.0.0.1:8000/)
 + chapter 6 - jasmine unit testing
-  * *jasmine:* open 'learnpod/chapter6/test/learnpodSpecRunner.html' in browser
+  * *jasmine:* open 'learnpod/chapter06/test/learnpodSpecRunner.html' in browser
 + chapter 7 - packaging with npm & code coverage with karma
   * **_requires npm_**
   * *setup:* `npm install`
   * *run:* `npm start`
-  * *spec reults:* open 'learnpod/chapter7/test/learnpodSpecRunner.html' in browser
-  * *coverage results:* `npm test` then open 'learnpod/chapter7/test/coverage/report-html/js/index.html' in browser
+  * *spec reults:* open 'learnpod/chapter07/test/learnpodSpecRunner.html' in browser
+  * *coverage results:* `npm test` then open 'learnpod/chapter07/test/coverage/report-html/js/index.html' in browser
 + chapter 8 - REST (giphy)
 + chapter 9 - jshint & npm script cleanup
   * *code quality check* `npm run lint`
@@ -29,7 +29,7 @@
 + pass arguments to karma conf / npm scripts
   * pass chapter# to linter/test runner
   * pass specific spec to test runner
-  * pass specific file to linter 
+  * pass specific file to linter
 + 7 scripts
 + fancify readme
 + data import (csv)

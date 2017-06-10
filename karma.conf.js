@@ -2,7 +2,7 @@
 // Generated on Sun May 14 2017 00:01:30 GMT-0400 (EDT)
 
 module.exports = function(config) {
-  var chapter = "chapter9"
+  var chapter = "chapter09"
   ,srcCode = chapter + "/src/js/*.js"
   ,testCode = chapter + "/test/js/*.spec.js"
   ,testCoverage = chapter + "/test/coverage/"

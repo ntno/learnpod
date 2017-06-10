@@ -19,7 +19,7 @@
   },
   "scripts": {
     "karma": "./node_modules/.bin/karma start karma.conf.js",
-    "lint": "./node_modules/.bin/jshint chapter9/src/js/*.js",
+    "lint": "./node_modules/.bin/jshint chapter09/src/js/*.js",
     "start": "python -m SimpleHTTPServer",
     "pretest": "npm run lint",
     "test": "npm run karma"
