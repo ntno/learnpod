@@ -20,7 +20,7 @@
   * *code quality check* `npm run lint`
   * *run jasmine specs from command line* `npm run karma`
   * *run linter then specs* `npm test`
-
++ chapter 10 - processing.js (graphics) proof of concept
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
@@ -35,11 +35,13 @@
 + fancify readme
 + data import (csv)
 + database
-+ node
 + css3 responsive design(?)
 + bootstrap(?)
 + music
 + animation
++ ngrok research
++ interact.js (draggable js library) 
++ sepharia API
 
 ### NOTE:
 if you receive `'[Errno 48] Address already in use'` from `python -m SimpleHTTPServer`
