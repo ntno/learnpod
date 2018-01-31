@@ -20,7 +20,8 @@
   * *code quality check* `npm run lint`
   * *run jasmine specs from command line* `npm run karma`
   * *run linter then specs* `npm test`
-+ chapter 10 - processing.js (graphics) proof of concept
++ chapter 10 - angular directive
++ chapter 11 - processing.js (graphics) proof of concept
 
 ### Step by Step
 [see the process](https://github.com/ntno/learnpod/commits/master "individual commits")
