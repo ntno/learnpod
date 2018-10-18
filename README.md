@@ -43,6 +43,7 @@
 + ngrok research
 + interact.js (draggable js library) 
 + sepharia API
++ travis CI
 
 ### NOTE:
 if you receive `'[Errno 48] Address already in use'` from `python -m SimpleHTTPServer`
